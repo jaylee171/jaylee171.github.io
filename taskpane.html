@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="taskpane.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/office-ui-fabric/1.4.0/css/fabric.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/office-ui-fabric/1.4.0/css/fabric.components.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/client/core.min.js"></script>
+
+</head>
+<body>
+
+<section class="ms-font-m"></section>
+
+<!--The Removing of the outline and fill is going to be done through a different method-->
+
+<!--Black & White-->
+<!--Black fill, outline, and text color-->
+<div class="shape-row">
+	<div class="square black" data-type="fill" title="Black Fill"></div>
+	<div class="square black" data-type="outline" title="Black Outline">
+		<div class="inner-square black"></div>
+	</div>
+	<i class="fas fa-font black" style="font-size:14px" title="Black Text"></i>
+</div>
+<!--White fill, outline, and text color-->
+<div class="shape-row">
+	<div class="square white" data-type="fill" title="White Fill"></div>
+	<div class="square white" data-type="outline" title="White Outline">
+		<div class="inner-square white"></div>
+	</div>
+	<i class="fas fa-font white" style="font-size:14px" title="White Text"></i>
+</div>
+<div class="line"></div>
+
+<!--Black Palette-->
+<!--Gray Fill, Gray outline, and text color-->
+<div class="shape-row">
+	<div class="square light-gray" data-type="fill" title="Light Gray Fill"></div>
+	<div class="square light-gray" data-type="outline" title="Light Gray Outline">
+		<div class="inner-square light-gray"></div>
+	</div>
+	<i class="fas fa-font light-gray" title="Light Gray Text"></i>
+</div>
+
+<!--Light Black Fill, Light Black Outline, and text color-->
+<div class="shape-row">
+	<div class="square light-black" data-type="fill" title="Light Black Fill"></div>
+	<div class="square light-black" data-type="outline" title="Light Black Outline">
+		<div class="inner-square light-black"></div>
+	</div>
+	<i class="fas fa-font light-black" title="Light Black Text"> </i>
+</div>
+
+<div class="line"></div>
+
+<!--Blue Palette-->
+<!--Cool-blue Fill,  Cool-blue outline, and text color-->
+<div class="shape-row">
+	<div class="square cool-blue" data-type="fill" title="Cool Blue Fill"></div>
+	<div class="square cool-blue" data-type="outline" title="Cool Blue Outline">
+		<div class="inner-square cool-blue"></div>
+	</div>
+	<i class="fas fa-font cool-blue" title="Cool Blue Text"></i>
+</div>
+
+<!--Navy Blue Fill, Navy Blue Outline, and text color-->
+<div class="shape-row">
+	<div class="square navy-blue" data-type="fill" title="Navy Blue Fill"></div>
+	<div class="square navy-blue" data-type="outline" title="Navy Blue Outline">
+		<div class="inner-square navy-blue"></div>
+	</div>
+	<i class="fas fa-font navy-blue" title="Navy Blue Text"> </i>
+</div>
+
+<!--Dark Blue Fill, Dark Blue Outline, and text color-->
+<div class="shape-row">
+	<div class="square dark-blue" data-type="fill" title="Dark Blue Fill"></div>
+	<div class="square dark-blue" data-type="outline" title="Dark Blue Outline">
+		<div class="inner-square dark-blue"></div>
+	</div>
+	<i class="fas fa-font dark-blue" title="Dark Blue Text"> </i>
+</div>
+
+<!--Turquoise Fill,Turquoise Outline, and text color-->
+<div class="shape-row">
+	<div class="square turquoise" data-type="fill" title="Turquoise Fill"></div>
+	<div class="square turquoise" data-type="outline" title="Turquoise Outline">
+		<div class="inner-square turquoise"></div>
+	</div>
+	<i class="fas fa-font turquoise" title="Turquoise Text"> </i>
+</div>
+
+<!--Sky Blue Fill, Sky Blue Outline, and text color-->
+<div class="shape-row">
+	<div class="square sky-blue" data-type="fill" title="Sky Blue Fill"></div>
+	<div class="square sky-blue" data-type="outline" title="Sky Blue Outline">
+		<div class="inner-square sky-blue"></div>
+	</div>
+	<i class="fas fa-font sky-blue" title="Sky Blue Text"></i>
+</div>
+
+<!--Light Blue Fill, Light Blue Outline, and text color-->
+<div class="shape-row">
+	<div class="square light-blue" data-type="fill" title="Light Blue Fill"></div>
+	<div class="square light-blue" data-type="outline" title="Light Blue Outline">
+		<div class="inner-square light-blue"></div>
+	</div>
+	<i class="fas fa-font light-blue" title="Light Blue Text"></i>
+</div>
+
+<div class="line"></div>
+
+<!--Red Palette-->
+<!--Fire Engine Red Fill,  Fire Engine Red outline, and text color-->
+<div class="shape-row">
+	<div class="square fire-engine-red" data-type="fill" title="Fire Engine Red Fill"></div>
+	<div class="square fire-engine-red" data-type="outline" title="Fire Engine Red Outline">
+		<div class="inner-square fire-engine-red"></div>
+	</div>
+	<i class="fas fa-font fire-engine-red" title="Fire Engine Red Text"></i>
+</div>
+
+<!--Crimson Red Fill, Crimson Red Outline, and text color-->
+<div class="shape-row">
+	<div class="square crimson-red" data-type="fill" title="Crimson Red Fill"></div>
+	<div class="square crimson-red" data-type="outline" title="Crimson Red Outline">
+		<div class="inner-square crimson-red"></div>
+	</div>
+	<i class="fas fa-font crimson-red" title="Crimson Red Text"> </i>
+</div>
+
+<!--Candy Apple Red Fill, Candy Apple Red Outline, and text color-->
+<div class="shape-row">
+	<div class="square candy-apple-red" data-type="fill" title="Candy Apple Red Fill"></div>
+	<div class="square candy-apple-red" data-type="outline" title="Candy Apple Red Outline">
+		<div class="inner-square candy-apple-red"></div>
+	</div>
+	<i class="fas fa-font candy-apple-red" title="Candy Apple Red Text"> </i>
+</div>
+
+<!--Ferrari Red Fill, Ferrari Red Outline, and text color-->
+<div class="shape-row">
+	<div class="square ferrari-red" data-type="fill" title="Ferrari Red Fill"></div>
+	<div class="square ferrari-red" data-type="outline" title="Ferrari Red Outline">
+		<div class="inner-square ferrari-red"></div>
+	</div>
+	<i class="fas fa-font ferrari-red" title="Ferrari Red Text"> </i>
+</div>
+
+<!--Coral Red Fill, Coral Red Outline, and text color-->
+<div class="shape-row">
+	<div class="square coral-red" data-type="fill" title="Coral Red Fill"></div>
+	<div class="square coral-red" data-type="outline" title="Coral Red Outline">
+		<div class="inner-square coral-red"></div>
+	</div>
+	<i class="fas fa-font coral-red" title="Coral Red Text"></i>
+</div>
+
+<!--Salmon Pink Fill, Salmon Pink Outline, and text color-->
+<div class="shape-row">
+	<div class="square salmon-pink" data-type="fill" title="Salmon Pink Fill"></div>
+	<div class="square salmon-pink" data-type="outline" title="Salmon Pink Outline">
+		<div class="inner-square salmon-pink"></div>
+	</div>
+	<i class="fas fa-font salmon-pink" title="Salmon Pink Text"></i>
+</div>
+
+<div class="line"></div>
+
+<!--Orange Palette-->
+<!--Rusty Orange Fill,  Rusty Orange outline, and text color-->
+<div class="shape-row">
+	<div class="square rusty-orange" data-type="fill" title="Rusty Orange Fill"></div>
+	<div class="square rusty-orange" data-type="outline" title="Rusty Orange Outline">
+		<div class="inner-square rusty-orange"></div>
+	</div>
+	<i class="fas fa-font rusty-orange" title="Rusty Orange Text"></i>
+</div>
+
+<!--Burnt Sienna Fill, Burnt Sienna Outline, and text color-->
+<div class="shape-row">
+	<div class="square burnt-sienna" data-type="fill" title="Burnt Sienna Fill"></div>
+	<div class="square burnt-sienna" data-type="outline" title="Burnt Sienna Outline">
+		<div class="inner-square burnt-sienna"></div>
+	</div>
+	<i class="fas fa-font burnt-sienna" title="Burnt Sienna Text"> </i>
+</div>
+
+<!--Terra Cotta Fill,Terra Cotta Outline, and text color-->
+<div class="shape-row">
+	<div class="square terra-cotta" data-type="fill" title="Terra Cotta Fill"></div>
+	<div class="square terra-cotta" data-type="outline" title="Terra Cotta Outline">
+		<div class="inner-square terra-cotta"></div>
+	</div>
+	<i class="fas fa-font terra-cotta" title="Terra Cotta Text"> </i>
+</div>
+
+<!--Peach Fill, Peach Outline, and text color-->
+<div class="shape-row">
+	<div class="square peach" data-type="fill" title="Peach Fill"></div>
+	<div class="square peach" data-type="outline" title="Peach Outline">
+		<div class="inner-square peach"></div>
+	</div>
+	<i class="fas fa-font peach" title="Peach Text"> </i>
+</div>
+
+<!--Light Apricot Fill, Light Apricot Outline, and text color-->
+<div class="shape-row">
+	<div class="square light-apricot" data-type="fill" title="Light Apricot Fill"></div>
+	<div class="square light-apricot" data-type="outline" title="Light Apricot Outline">
+		<div class="inner-square light-apricot"></div>
+	</div>
+	<i class="fas fa-font light-apricot" title="Light Apricot Text"></i>
+</div>
+
+<div class="line"></div>
+
+<!--Purple Palette-->
+<!--Purple Fill,  Purple outline, and text color-->
+<div class="shape-row">
+	<div class="square purple" data-type="fill" title="Purple Fill"></div>
+	<div class="square purple" data-type="outline" title="Purple Outline">
+		<div class="inner-square purple"></div>
+	</div>
+	<i class="fas fa-font purple" title="Purple Text"></i>
+</div>
+
+<!--Violet Fill, Violet Outline, and text color-->
+<div class="shape-row">
+	<div class="square violet" data-type="fill" title="Violet Fill"></div>
+	<div class="square violet" data-type="outline" title="Violet Outline">
+		<div class="inner-square violet"></div>
+	</div>
+	<i class="fas fa-font violet" title="Violet Text"> </i>
+</div>
+
+<!--Lilac Fill,Lilac Outline, and text color-->
+<div class="shape-row">
+	<div class="square lilac" data-type="fill" title="Lilac Fill"></div>
+	<div class="square lilac" data-type="outline" title="Lilac Outline">
+		<div class="inner-square lilac"></div>
+	</div>
+	<i class="fas fa-font lilac" title="Lilac Text"> </i>
+</div>
+
+<!--Lavender Fill, Lavender Outline, and text color-->
+<div class="shape-row">
+	<div class="square lavender" data-type="fill" title="Lavender Fill"></div>
+	<div class="square lavender" data-type="outline" title="Lavender Outline">
+		<div class="inner-square lavender"></div>
+	</div>
+	<i class="fas fa-font lavender" title="Lavender Text"> </i>
+</div>
+
+<!--Magenta Fill, Magenta Outline, and text color-->
+<div class="shape-row">
+	<div class="square magenta" data-type="fill" title="Magenta Fill"></div>
+	<div class="square magenta" data-type="outline" title="Magenta Outline">
+		<div class="inner-square magenta"></div>
+	</div>
+	<i class="fas fa-font magenta" title="Magenta Text"></i>
+</div>
+
+<div class="line"></div>
+
+<!--Green Palette-->
+<!--Cadmium Green Fill,  Cadmium Green outline, and text color-->
+<div class="shape-row">
+	<div class="square cadmium-green" data-type="fill" title="Cadmium Green Fill"></div>
+	<div class="square cadmium-green" data-type="outline" title="Cadmium Green Outline">
+		<div class="inner-square cadmium-green"></div>
+	</div>
+	<i class="fas fa-font cadmium-green" title="Cadmium Green Text"></i>
+</div>
+
+<!--Forest Green Fill,Forest Green Outline, and text color-->
+<div class="shape-row">
+	<div class="square forest-green" data-type="fill" title="Forest Green Fill"></div>
+	<div class="square forest-green" data-type="outline" title="Forest Green Outline">
+		<div class="inner-square forest-green"></div>
+	</div>
+	<i class="fas fa-font forest-green" title="Forest Green Text"> </i>
+</div>
+
+<!--India Green Fill, India Green Outline, and text color-->
+<div class="shape-row">
+	<div class="square india-green" data-type="fill" title="India Green Fill"></div>
+	<div class="square india-green" data-type="outline" title="India Green Outline">
+		<div class="inner-square india-green"></div>
+	</div>
+	<i class="fas fa-font india-green" title="India Green Text"> </i>
+</div>
+
+<!--Lime Green Fill, Lime Green Outline, and text color-->
+<div class="shape-row">
+	<div class="square lime-green" data-type="fill" title="Lime Green Fill"></div>
+	<div class="square lime-green" data-type="outline" title="Lime Green Outline">
+		<div class="inner-square lime-green"></div>
+	</div>
+	<i class="fas fa-font lime-green" title="Lime Green Text"> </i>
+</div>
+
+<!--Light Green Fill, Light Green Outline, and text color-->
+<div class="shape-row">
+	<div class="square light-green" data-type="fill" title="Light Green Fill"></div>
+	<div class="square light-green" data-type="outline" title="Light Green Outline">
+		<div class="inner-square light-green"></div>
+	</div>
+	<i class="fas fa-font light-green" title="Light Green Text"></i>
+</div>
+
+<!--Tea Green Fill, Tea Green Outline, and text color-->
+<div class="shape-row">
+	<div class="square tea-green" data-type="fill" title="Tea Green Fill"></div>
+	<div class="square tea-green" data-type="outline" title="Tea Green Outline">
+		<div class="inner-square tea-green"></div>
+	</div>
+	<i class="fas fa-font tea-green" title="Tea Green Text"></i>
+</div>
+
+<div class="line"></div>
+</body>
+</html>

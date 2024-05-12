@@ -1,0 +1,346 @@
+/*All colors will be stored inside the root variable*/
+:root {
+    /*Black & White*/
+    --black: black;
+    --white: white;
+    /*Black palettes*/
+    --light-gray: lightgray;
+    --light-black: #262626;
+    /*Blue palettes*/
+    --cool-blue: #03045e;
+    --navy-blue: #215F9A;
+    --dark-blue: #0E2841;
+    --turquoise: #46b1e1;
+    --sky-blue: #83cbeb;
+    --light-blue: #c1e5f5;
+    /*Red Palettes*/
+    --fire-engine-red: #c30010;
+    --crimson-red: #de0a26;
+    --candy-apple-red: #f01e2c;
+    --ferrari-red: #ff2c2c;
+    --coral-red: #f94449;
+    --salmon-pink: #f69697;
+    /*Orange Palettes*/
+    --rusty-orange: #80350e;
+    --burnt-sienna: #c04f15;
+    --terra-cotta: #e97132;
+    --peach: #f2aa84;
+    --light-apricot: #fbe3d6;
+    /*Purple palettes*/
+    --purple: #a32cc4;
+    --violet: #710193;
+    --lilac: #b660cd;
+    --lavender: #e19ff6;
+    --magenta: #a10558;
+    /*Green Palettes*/
+    --cadmium-green: #005c29;
+    --forest-green: #228b22;
+    --india-green: #138708;
+    --lime-green: #32cd33;
+    --light-green: #90ee90;
+    --tea-green: #d0f0bf;  
+  }
+  
+
+  
+  section.samples {
+      margin-top: 20px;
+  }
+  
+  section.samples .ms-Button, section.setup .ms-Button {
+      display: block;
+      margin-bottom: 5px;
+      margin-left: 20px;
+      min-width: 80px;
+  }
+  .element {
+    border-bottom: 1px solid black;
+  }
+  
+  
+  /*Basic Elements for creating a row*/
+  .shape-row {
+    display:flex;
+    margin-top: 2.7px;
+  }
+  
+  /*Line after a certain palette*/
+  .line {
+    width: 40px;
+    height: 1px;
+    background-color: gray;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  
+  
+  /*Basic Square Class*/
+  
+  .square {
+    width: 14px;
+    height: 14px;
+    margin-right: 3px;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .inner-square {
+    width: 8px;
+    height: 8px;
+    position: relative;
+    top: 20%;
+    left: 20%;
+    background-color:white;
+  }
+  
+  /*Outline border for each square*/
+  /*Black & White*/
+  .square.black {border:1px solid var(--black);background-color: var(--black)}
+  .square.white {border: 1px solid var(--black);background-color: var(--white)}
+  
+  /*Black Palettes*/
+  .square.light-gray {border: 1px solid var(--light-gray);background-color: var(--light-gray)}
+  .square.light-black {border: 1px solid var(--light-black);background-color: var(--light-black)}
+  
+  /*Blue Palettes*/
+  .square.cool-blue {border: 1px solid var(--cool-blue); background-color: var(--cool-blue)}
+  .square.navy-blue {border: 1px solid var(--navy-blue); background-color: var(--navy-blue)}
+  .square.dark-blue {border: 1px solid var(--dark-blue); background-color: var(--dark-blue)}
+  .square.turquoise {border: 1px solid var(--turquoise); background-color: var(--turquoise)}
+  .square.sky-blue {border: 1px solid var(--sky-blue); background-color: var(--sky-blue)}
+  .square.light-blue {border: 1px solid var(--light-blue); background-color: var(--light-blue)}
+  
+  /*Red Palettes*/
+  .square.fire-engine-red {border: 1px solid var(--fire-engine-red); background-color: var(--fire-engine-red)}
+  .square.crimson-red {border: 1px solid var(--crimson-red); background-color: var(--crimson-red)}
+  .square.candy-apple-red {border: 1px solid var(--candy-apple-red); background-color: var(--candy-apple-red)}
+  .square.ferrari-red {border: 1px solid var(--ferrari-red); background-color: var(--ferrari-red)}
+  .square.coral-red {border: 1px solid var(--coral-red); background-color: var(--coral-red)}
+  .square.salmon-pink {border: 1px solid var(--salmon-pink); background-color: var(--salmon-pink)}
+  
+  /*Orange Palettes*/
+  .square.rusty-orange {border: 1px solid var(--rusty-orange); background-color: var(--rusty-orange)}
+  .square.burnt-sienna {border: 1px solid var(--burnt-sienna); background-color: var(--burnt-sienna)}
+  .square.terra-cotta {border: 1px solid var(--terra-cotta); background-color: var(--terra-cotta)}
+  .square.peach {border: 1px solid var(--peach); background-color: var(--peach)}
+  .square.light-apricot {border: 1px solid var(--light-apricot); background-color: var(--light-apricot)}
+  
+  /*Purple Palettes*/
+  .square.purple {border: 1px solid var(--purple); background-color: var(--purple)}
+  .square.violet {border: 1px solid var(--violet); background-color: var(--violet)}
+  .square.lilac {border: 1px solid var(--lilac); background-color: var(--lilac)}
+  .square.lavender {border: 1px solid var(--lavender); background-color: var(--lavender)}
+  .square.magenta {border: 1px solid var(--magenta); background-color: var(--magenta)}
+  
+  /*Green Palettes*/
+  .square.cadmium-green {border: 1px solid var(--cadmium-green); background-color: var(--cadmium-green)}
+  .square.forest-green {border: 1px solid var(--forest-green); background-color: var(--forest-green)}
+  .square.india-green {border: 1px solid var(--india-green); background-color: var(--india-green)}
+  .square.lime-green {border: 1px solid var(--lime-green); background-color: var(--lime-green)}
+  .square.light-green {border: 1px solid var(--light-green); background-color: var(--light-green)}
+  .square.tea-green {border: 1px solid var(--tea-green); background-color: var(--tea-green)}
+  
+  
+  /*Outline border for each inner square*/
+  /*Black & White*/
+  .inner-square.black {border:1px solid var(--black);}
+  .inner-square.white {border:1px solid var(--black);}
+  
+  /*Black Palettes*/
+  .inner-square.light-gray {border: 1px solid var(--light-gray)}
+  .inner-square.light-black {border: 1px solid var(--light-black)}
+  
+  /*Blue Palettes*/
+  .inner-square.cool-blue {border: 1px solid var(--cool-blue)}
+  .inner-square.navy-blue {border: 1px solid var(--navy-blue)}
+  .inner-square.dark-blue {border: 1px solid var(--dark-blue)}
+  .inner-square.turquoise {border: 1px solid var(--turquoise)}
+  .inner-square.sky-blue {border: 1px solid var(--sky-blue)}
+  .inner-square.light-blue {border: 1px solid var(--light-blue)}
+  
+  /*Red Palettes*/
+  .inner-square.fire-engine-red {border: 1px solid var(--fire-engine-red)}
+  .inner-square.crimson-red {border: 1px solid var(--crimson-red)}
+  .inner-square.candy-apple-red {border: 1px solid var(--candy-apple-red)}
+  .inner-square.ferrari-red {border: 1px solid var(--ferrari-red)}
+  .inner-square.coral-red {border: 1px solid var(--coral-red)}
+  .inner-square.salmon-pink {border: 1px solid var(--salmon-pink)}
+  
+  /*Orange Palettes*/
+  .inner-square.rusty-orange {border: 1px solid var(--rusty-orange)}
+  .inner-square.burnt-sienna {border: 1px solid var(--burnt-sienna)}
+  .inner-square.terra-cotta {border: 1px solid var(--terra-cotta)}
+  .inner-square.peach {border: 1px solid var(--peach)}
+  .inner-square.light-apricot {border: 1px solid var(--light-apricot)}
+  
+  /*Purple Palettes*/
+  .inner-square.purple {border: 1px solid var(--purple)}
+  .inner-square.violet {border: 1px solid var(--violet)}
+  .inner-square.lilac {border: 1px solid var(--lilac)}
+  .inner-square.lavender {border: 1px solid var(--lavender)}
+  .inner-square.magenta {border: 1px solid var(--magenta)}
+  
+  /*Green Palettes*/
+  .inner-square.cadmium-green {border: 1px solid var(--cadmium-green)}
+  .inner-square.forest-green {border: 1px solid var(--forest-green)}
+  .inner-square.india-green {border: 1px solid var(--india-green)}
+  .inner-square.lime-green {border: 1px solid var(--lime-green)}
+  .inner-square.light-green {border: 1px solid var(--light-green)}
+  .inner-square.tea-green {border: 1px solid var(--tea-green)}
+  
+  /*Outline of Text Font*/
+  /*Black & White*/
+  .fa-font.white {color: var(--white);
+    text-shadow: -0.5px -0.5px 0 var(--black), 0.5px -0.5px 0 var(--black), -0.5px 0.5px 0 var(--black), 0.5px 0.5px 0 var(--black);
+  }
+  .fa-font.black {color: var(--black);
+    text-shadow: -0.5px -0.5px 0 var(--black), 0.5px -0.5px 0 var(--black), -0.5px 0.5px 0 var(--black), 0.5px 0.5px 0 var(--black);
+  }
+  
+  /*Black Palettes*/
+  .fa-font.light-gray {color: var(--light-gray);
+    text-shadow: -0.5px -0.5px 0 var(--light-gray), 0.5px -0.5px 0 var(--light-gray), -0.5px 0.5px 0 var(--light-gray), 0.5px 0.5px 0 var(--light-gray);
+  }
+  .fa-font.light-black {color: var(--light-black);
+    text-shadow: -0.5px -0.5px 0 var(--light-black), 0.5px -0.5px 0 var(--light-black), -0.5px 0.5px 0 var(--light-black), 0.5px 0.5px 0 var(--light-black);
+  }
+  
+  /*Blue Palettes*/
+  .fa-font.cool-blue {color: var(--cool-blue);
+    text-shadow: -0.5px -0.5px 0 var(--cool-blue), 0.5px -0.5px 0 var(--cool-blue), -0.5px 0.5px 0 var(--cool-blue), 0.5px 0.5px 0 var(--cool-blue);
+  }
+  .fa-font.navy-blue {color: var(--navy-blue);
+    text-shadow: -0.5px -0.5px 0 var(--navy-blue), 0.5px -0.5px 0 var(--navy-blue), -0.5px 0.5px 0 var(--navy-blue), 0.5px 0.5px 0 var(--navy-blue);
+  }
+  .fa-font.dark-blue {color: var(--dark-blue);
+    text-shadow: -0.5px -0.5px 0 var(--dark-blue), 0.5px -0.5px 0 var(--dark-blue), -0.5px 0.5px 0 var(--dark-blue), 0.5px 0.5px 0 var(--dark-blue);
+  }
+  .fa-font.turquoise {color: var(--turquoise);
+    text-shadow: -0.5px -0.5px 0 var(--turquoise), 0.5px -0.5px 0 var(--turquoise), -0.5px 0.5px 0 var(--turquoise), 0.5px 0.5px 0 var(--turquoise);
+  }
+  .fa-font.sky-blue {color: var(--sky-blue);
+    text-shadow: -0.5px -0.5px 0 var(--sky-blue), 0.5px -0.5px 0 var(--sky-blue), -0.5px 0.5px 0 var(--sky-blue), 0.5px 0.5px 0 var(--sky-blue);
+  }
+  .fa-font.light-blue {color: var(--light-blue);
+    text-shadow: -0.5px -0.5px 0 var(--light-blue), 0.5px -0.5px 0 var(--light-blue), -0.5px 0.5px 0 var(--light-blue), 0.5px 0.5px 0 var(--light-blue);
+  }
+  
+  /*Red Palettes*/
+  .fa-font.fire-engine-red {color: var(--fire-engine-red);
+    text-shadow: -0.5px -0.5px 0 var(--fire-engine-red), 0.5px -0.5px 0 var(--fire-engine-red), -0.5px 0.5px 0 var(--fire-engine-red), 0.5px 0.5px 0 var(--fire-engine-red);
+  }
+  .fa-font.crimson-red {color: var(--crimson-red);
+    text-shadow: -0.5px -0.5px 0 var(--crimson-red), 0.5px -0.5px 0 var(--crimson-red), -0.5px 0.5px 0 var(--crimson-red), 0.5px 0.5px 0 var(--crimson-red);
+  }
+  .fa-font.candy-apple-red {color: var(--candy-apple-red);
+    text-shadow: -0.5px -0.5px 0 var(--candy-apple-red), 0.5px -0.5px 0 var(--candy-apple-red), -0.5px 0.5px 0 var(--candy-apple-red), 0.5px 0.5px 0 var(--candy-apple-red);
+  }
+  .fa-font.ferrari-red {color: var(--ferrari-red);
+    text-shadow: -0.5px -0.5px 0 var(--ferrari-red), 0.5px -0.5px 0 var(--ferrari-red), -0.5px 0.5px 0 var(--ferrari-red), 0.5px 0.5px 0 var(--ferrari-red);
+  }
+  .fa-font.coral-red {color: var(--coral-red);
+    text-shadow: -0.5px -0.5px 0 var(--coral-red), 0.5px -0.5px 0 var(--coral-red), -0.5px 0.5px 0 var(--coral-red), 0.5px 0.5px 0 var(--coral-red);
+  }
+  .fa-font.salmon-pink {color: var(--salmon-pink);
+    text-shadow: -0.5px -0.5px 0 var(--salmon-pink), 0.5px -0.5px 0 var(--salmon-pink), -0.5px 0.5px 0 var(--salmon-pink), 0.5px 0.5px 0 var(--salmon-pink);
+  }
+  
+  /*Orange Palettes*/
+  .fa-font.rusty-orange {color: var(--rusty-orange);
+    text-shadow: -0.5px -0.5px 0 var(--rusty-orange), 0.5px -0.5px 0 var(--rusty-orange), -0.5px 0.5px 0 var(--rusty-orange), 0.5px 0.5px 0 var(--rusty-orange);
+  }
+  .fa-font.burnt-sienna {color: var(--burnt-sienna);
+    text-shadow: -0.5px -0.5px 0 var(--burnt-sienna), 0.5px -0.5px 0 var(--burnt-sienna), -0.5px 0.5px 0 var(--burnt-sienna), 0.5px 0.5px 0 var(--burnt-sienna);
+  }
+  .fa-font.terra-cotta {color: var(--terra-cotta);
+    text-shadow: -0.5px -0.5px 0 var(--terra-cotta), 0.5px -0.5px 0 var(--terra-cotta), -0.5px 0.5px 0 var(--terra-cotta), 0.5px 0.5px 0 var(--terra-cotta);
+  }
+  .fa-font.peach {color: var(--peach);
+    text-shadow: -0.5px -0.5px 0 var(--peach), 0.5px -0.5px 0 var(--peach), -0.5px 0.5px 0 var(--peach), 0.5px 0.5px 0 var(--peach);
+  }
+  .fa-font.light-apricot {color: var(--light-apricot);
+    text-shadow: -0.5px -0.5px 0 var(--light-apricot), 0.5px -0.5px 0 var(--light-apricot), -0.5px 0.5px 0 var(--light-apricot), 0.5px 0.5px 0 var(--light-apricot);
+  }
+  
+  /*Purple Palettes*/
+  .fa-font.purple {color: var(--purple);
+    text-shadow: -0.5px -0.5px 0 var(--purple), 0.5px -0.5px 0 var(--purple), -0.5px 0.5px 0 var(--purple), 0.5px 0.5px 0 var(--purple);
+  }
+  .fa-font.violet {color: var(--violet);
+    text-shadow: -0.5px -0.5px 0 var(--violet), 0.5px -0.5px 0 var(--violet), -0.5px 0.5px 0 var(--violet), 0.5px 0.5px 0 var(--violet);
+  }
+  .fa-font.lilac {color: var(--lilac);
+    text-shadow: -0.5px -0.5px 0 var(--lilac), 0.5px -0.5px 0 var(--lilac), -0.5px 0.5px 0 var(--lilac), 0.5px 0.5px 0 var(--lilac);
+  }
+  .fa-font.lavender {color: var(--lavender);
+    text-shadow: -0.5px -0.5px 0 var(--lavender), 0.5px -0.5px 0 var(--lavender), -0.5px 0.5px 0 var(--lavender), 0.5px 0.5px 0 var(--lavender);
+  }
+  .fa-font.magenta {color: var(--magenta);
+    text-shadow: -0.5px -0.5px 0 var(--magenta), 0.5px -0.5px 0 var(--magenta), -0.5px 0.5px 0 var(--magenta), 0.5px 0.5px 0 var(--magenta);
+  }
+  
+  /*Green Palettes*/
+  .fa-font.cadmium-green {color: var(--cadmium-green);
+    text-shadow: -0.5px -0.5px 0 var(--cadmium-green), 0.5px -0.5px 0 var(--cadmium-green), -0.5px 0.5px 0 var(--cadmium-green), 0.5px 0.5px 0 var(--cadmium-green);
+  }
+  .fa-font.forest-green {color: var(--forest-green);
+    text-shadow: -0.5px -0.5px 0 var(--forest-green), 0.5px -0.5px 0 var(--forest-green), -0.5px 0.5px 0 var(--forest-green), 0.5px 0.5px 0 var(--forest-green);
+  }
+  .fa-font.india-green {color: var(--india-green);
+    text-shadow: -0.5px -0.5px 0 var(--india-green), 0.5px -0.5px 0 var(--india-green), -0.5px 0.5px 0 var(--india-green), 0.5px 0.5px 0 var(--india-green);
+  }
+  .fa-font.lime-green {color: var(--lime-green);
+    text-shadow: -0.5px -0.5px 0 var(--lime-green), 0.5px -0.5px 0 var(--lime-green), -0.5px 0.5px 0 var(--lime-green), 0.5px 0.5px 0 var(--lime-green);
+  }
+  .fa-font.light-green {color: var(--light-green);
+    text-shadow: -0.5px -0.5px 0 var(--light-green), 0.5px -0.5px 0 var(--light-green), -0.5px 0.5px 0 var(--light-green), 0.5px 0.5px 0 var(--light-green);
+  }
+  .fa-font.tea-green {color: var(--tea-green);
+    text-shadow: -0.5px -0.5px 0 var(--tea-green), 0.5px -0.5px 0 var(--tea-green), -0.5px 0.5px 0 var(--tea-green), 0.5px 0.5px 0 var(--tea-green);
+  }
+  
+  .white-text {
+    color: white;
+      text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black;
+  }
+  
+  .black-text {
+    color: black;
+    text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black;
+  }
+  
+  .gray-text {
+    color: lightgray;
+    text-shadow: -0.5px -0.5px 0 lightgray, 0.5px -0.5px 0 lightgray, -0.5px 0.5px 0 lightgray, 0.5px 0.5px 0 lightgray;  
+  }
+  
+  .blue-text {
+    color: blue;
+    text-shadow: -1px -1px 0 blue, 1px -1px 0 blue, -1px 1px 0 blue, 1px 1px 0 blue;
+  }
+  
+  .yellow-text {
+    color: yellow;
+  }
+  
+  
+  
+  .fa-font {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .fa-times {
+    top:50%;
+    left: 50%
+  }
+  
+  .square:hover, .fa-font:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  
+  .border-square:hover {
+    transform:scale(1.1);
+    opacity: 0.5;
+  }
